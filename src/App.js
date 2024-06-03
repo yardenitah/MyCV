@@ -7,25 +7,17 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { HiHome } from "react-icons/hi2";
 import { BsDot } from "react-icons/bs";
-import { usePDF } from "react-to-pdf";
+// import { usePDF } from "react-to-pdf";
 
-const Component = () => {
-  const { toPDF, targetRef } = usePDF({ filename: "page.pdf" });
-  return (
-    <div>
-      <button onClick={() => toPDF()}>Download PDF</button>
-      <div ref={targetRef}>
-        {" "}
-        <Main />
-        <aside>
-          <ContactInfo />
-          <Links />
-          <Skills />
-        </aside>
-      </div>
-    </div>
-  );
-};
+// const Component = () => {
+//   const { toPDF, targetRef } = usePDF({ filename: "page.pdf" });
+//   return (
+//     <div>
+//       <button onClick={() => toPDF()}>Download PDF</button>
+//       <div ref={targetRef}>Content to be generated to PDF</div>
+//     </div>
+//   );
+// };
 
 const Header = () => (
   <header>
